@@ -13,13 +13,12 @@ public class ContaBancariaaa {
     private String titular;
     private double saldo;
 
-    // Construtor
+    
     public ContaBancariaaa(String titular) {
         this.titular = titular;
         this.saldo = 0;
     }
 
-    // Depósito
     public void depositar(double valor) {
         if (valor > 0) {
             saldo += valor;
@@ -29,7 +28,7 @@ public class ContaBancariaaa {
         }
     }
 
-    // Saque
+    
     public void sacar(double valor) {
         if (valor > 0) {
             if (valor <= saldo) {
@@ -43,12 +42,12 @@ public class ContaBancariaaa {
         }
     }
 
-    // Consulta do saldo
+    
     public double getSaldo() {
         return saldo;
     }
 
-    // Verificação da situação da conta
+    
     public void verificarSaldo() {
 
         if (saldo == 0) {
@@ -65,7 +64,7 @@ public class ContaBancariaaa {
         }
     }
 
-    // Extrato simples utilizando for
+    
     public void exibirExtratoSimples() {
 
         for (int i = 1; i <= 5; i++) {
@@ -73,7 +72,7 @@ public class ContaBancariaaa {
         }
     }
 
-    // Extrato com quantidade definida pelo usuário
+    
     public void exibirOperacoes(int quantidade) {
 
         for (int i = 1; i <= quantidade; i++) {
